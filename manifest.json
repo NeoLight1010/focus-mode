@@ -8,5 +8,11 @@
 
   "browser_action": {
     "default_popup": "popup/default.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["lib/purify/purify.min.js", "content_scripts/default.js"]
+    }
+  ]
 }
