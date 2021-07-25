@@ -6,13 +6,21 @@
   "author": "NeoLight1010",
   "description": "Disable distracting websites. Enter full focus.",
 
+  "permissions": ["<all_urls>", "cookies"],
+
   "browser_action": {
     "default_popup": "popup/default.html"
   },
+
+  "background": {
+    "scripts": ["brackground/background.js"]
+  },
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
-      "js": ["lib/purify/purify.min.js", "content_scripts/default.js"]
+      "matches": ["<all_urls>"],
+      "js": ["lib/purify/purify.min.js", "content_scripts/block_page.js"]
     }
-  ]
+  ],
+
+  "web_accessible_resources": ["html/*.html"]
 }
