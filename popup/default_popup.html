@@ -4,14 +4,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/lib/tachyons/tachyons.min.css" />
+
+    <link rel="stylesheet" href="/lib/uikit-2.27.5/css/uikit.min.css" />
+
+    <script src="/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/lib/uikit-2.27.5/js/uikit.min.js"></script>
 
     <title>Focus Mode</title>
   </head>
 
-  <body class="calisto pa2">
-    <h3 class="f3 mt0">Focus Mode</h3>
+  <body>
+    <h1>Focus Mode</h1>
 
+    <form class="uk-form">
+      <fieldset>
+        <legend>Start time</legend>
+
+        <input type="text" id="start-hour" placeholder="Hour" />
+
+        <input type="text" id="start-minute" placeholder="Minute" />
+      </fieldset>
+
+      <br />
+      <fieldset>
+        <legend>End time</legend>
+
+        <input type="text" id="end-hour" placeholder="Hour" />
+
+        <input type="text" id="end-minute" placeholder="Minute" />
+      </fieldset>
+    </form>
+
+    <!--
     <form>
       <label for="block-youtube">Youtube</label>
       <input
@@ -39,8 +63,8 @@
 
       <input type="submit" value="Submit" />
     </form>
+    -->
 
-    <script src="/lib/js-cookie/js.cookie.min.js"/>
-    <script src="default_popup.js"></script>
+    <script type="module" src="default_popup.js"></script>
   </body>
 </html>

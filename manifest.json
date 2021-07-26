@@ -9,7 +9,7 @@
   "permissions": ["<all_urls>", "webRequest", "webRequestBlocking"],
 
   "browser_action": {
-    "default_popup": "popup/default.html"
+    "default_popup": "popup/default_popup.html"
   },
 
   "background": {
@@ -24,6 +24,9 @@
 
   "web_accessible_resources": [
     "html/blocked_page.html",
-    "background/background.js"
-  ]
+    "background/background.js",
+    "lib/**/*"
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
