@@ -15,18 +15,10 @@
   "background": {
     "scripts": ["background/background.js"]
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["lib/purify/purify.min.js", "content_scripts/block_page.js"]
-    }
-  ],
 
   "web_accessible_resources": [
     "html/blocked_page.html",
     "background/background.js",
     "lib/**/*"
-  ],
-
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  ]
 }
