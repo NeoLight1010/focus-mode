@@ -6,7 +6,7 @@
   "author": "NeoLight1010",
   "description": "Disable distracting websites. Enter full focus.",
 
-  "permissions": ["<all_urls>", "cookies"],
+  "permissions": ["<all_urls>", "webRequest", "webRequestBlocking"],
 
   "browser_action": {
     "default_popup": "popup/default.html"
@@ -22,5 +22,8 @@
     }
   ],
 
-  "web_accessible_resources": ["html/*.html"]
+  "web_accessible_resources": [
+    "html/blocked_page.html",
+    "background/background.js"
+  ]
 }
