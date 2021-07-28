@@ -16,25 +16,29 @@
   <body>
     <h1>Focus Mode</h1>
 
-    <form class="uk-form">
+    <form id="time-form" name="time-form" class="uk-form">
       <fieldset>
         <legend>Start time</legend>
 
-        <input type="text" id="start-hour" placeholder="Hour" />
+        <input type="text" id="start-hour" name="start-hour" placeholder="Hour" />
 
-        <input type="text" id="start-minute" placeholder="Minute" />
+        <input type="text" id="start-minute" name="start-minute" placeholder="Minute" />
       </fieldset>
 
       <br />
       <fieldset>
         <legend>End time</legend>
 
-        <input type="text" id="end-hour" placeholder="Hour" />
+        <input type="text" id="end-hour" name="end-hour" placeholder="Hour" />
 
-        <input type="text" id="end-minute" placeholder="Minute" />
+        <input type="text" id="end-minute" name="end-minute" placeholder="Minute" />
       </fieldset>
+
+      <br />
+      <button type="submit" class="uk-button">Submit</button>
     </form>
 
     <script type="module" src="default_popup.js"></script>
+    </script>
   </body>
 </html>

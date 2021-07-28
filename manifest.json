@@ -6,7 +6,13 @@
   "author": "NeoLight1010",
   "description": "Disable distracting websites. Enter full focus.",
 
-  "permissions": ["<all_urls>", "webRequest", "webRequestBlocking"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "focusmode@neolight.com"
+    }
+  },
+
+  "permissions": ["<all_urls>", "webRequest", "webRequestBlocking", "storage"],
 
   "browser_action": {
     "default_popup": "popup/default_popup.html"
@@ -19,6 +25,7 @@
   "web_accessible_resources": [
     "html/blocked_page.html",
     "background/background.js",
-    "lib/**/*"
+    "lib/**/*",
+    "popup/default_popup.js"
   ]
 }
