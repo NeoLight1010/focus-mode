@@ -17,7 +17,6 @@ function onSubmit(e) {
     document.getElementById("start-hour").classList.add("uk-form-danger");
     document.getElementById("start-minute").classList.add("uk-form-danger");
 
-    console.log("Start time is invalid!");
     isInvalid = true;
   }
 
@@ -25,7 +24,6 @@ function onSubmit(e) {
     document.getElementById("end-hour").classList.add("uk-form-danger");
     document.getElementById("end-minute").classList.add("uk-form-danger");
 
-    console.log("End time is invalid!");
     isInvalid = true;
   }
 
@@ -44,8 +42,3 @@ function onSubmit(e) {
 
 const timeForm = document.getElementById("time-form");
 timeForm.addEventListener("submit", onSubmit);
-
-console.log(
-  browser.storage.sync.get("startTime"),
-  browser.storage.sync.get("endTime")
-);
