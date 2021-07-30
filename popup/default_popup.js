@@ -7,8 +7,8 @@ function onSubmit(e) {
   )}`;
   const endTimeString = `${data.get("end-hour")}:${data.get("end-minute")}`;
 
-  const startTime = new Date("1970-01-01T" + startTimeString + "Z");
-  const endTime = new Date("1970-01-01T" + endTimeString + "Z");
+  const startTime = new Date("1970-01-01T" + startTimeString);
+  const endTime = new Date("1970-01-01T" + endTimeString);
 
   // Validation
   let isInvalid = false;
