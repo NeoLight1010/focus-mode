@@ -1,0 +1,43 @@
+/*style="width: 100vw; height: 100vh; font-family: Georgia"*/
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  font-family: Georgia;
+}
+
+.m0 {
+  margin: 0 0 0 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb-m {
+  margin-bottom: 16px;
+}
+
+.mb-l {
+  margin-bottom: 22px;
+}
+
+.mb-xl {
+  margin-bottom: 28px;
+}
