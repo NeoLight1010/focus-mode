@@ -37,6 +37,8 @@ function onSubmit(e) {
     endTime,
   });
 
+  browser.runtime.reload();
+
   return true;
 }
 
