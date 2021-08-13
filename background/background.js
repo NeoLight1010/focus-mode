@@ -2,7 +2,7 @@ function onBeforeRequest(_details) {
   console.log("Entering blocked page!");
 
   return {
-    redirectUrl: browser.runtime.getURL("html/blocked_page.html"),
+    redirectUrl: browser.runtime.getURL("pages/blocked_page/blocked_page.html"),
   };
 }
 

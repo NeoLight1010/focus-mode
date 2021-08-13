@@ -23,7 +23,8 @@
   },
 
   "web_accessible_resources": [
-    "html/blocked_page.html",
+    "pages/**/*.html",
+    "pages/**/*.js",
     "background/background.js",
     "lib/**/*",
     "popup/default_popup.js"
