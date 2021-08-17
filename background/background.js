@@ -25,9 +25,9 @@ function getBlockedWebsites() {
   const storage = browser.storage.sync;
 
   const defaultBlockedSites = [
-    allUrlsInDomain("www.facebook.com"),
-    allUrlsInDomain("www.youtube.com"),
-    allUrlsInDomain("www.twitch.tv"),
+    "www.facebook.com",
+    "www.youtube.com",
+    "www.twitch.tv",
   ];
 
   return storage.get({ blockedSites: defaultBlockedSites });
@@ -58,10 +58,12 @@ getBlockedTimes().then((timeData) => {
 
   if (isNowBlocked) {
     getBlockedWebsites().then((data) => {
+      const blocked = data.blockedSites.map((url) => allUrlsInDomain(url));
+
       browser.webRequest.onBeforeRequest.addListener(
         onBeforeRequest,
         {
-          urls: data.blockedSites,
+          urls: blocked,
         },
         ["blocking"]
       );
