@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/lib/uikit-2.27.5/css/uikit.min.css" />
+
+    <script src="/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/lib/uikit-2.27.5/js/uikit.min.js"></script>
+
+    <title>Focus Mode</title>
+  </head>
+
+  <body>
+    <h1>Focus Mode</h1>
+
+    <form id="settings-form" name="time-form" class="uk-form">
+      <fieldset>
+        <legend>Blocked pages</legend>
+
+        <textarea name="blocked-pages" cols="30" rows="5">
+www.youtube.com
+www.facebook.com
+www.twitch.tv
+        </textarea>
+      </fieldset>
+
+      <br />
+      <button type="submit" class="uk-button">Submit</button>
+    </form>
+
+    <script type="module" src="settings.js"></script>
+  </body>
+</html>

@@ -18,6 +18,10 @@
     "default_popup": "popup/default_popup.html"
   },
 
+  "options_ui": {
+    "page": "pages/settings/settings.html"
+  },
+
   "background": {
     "scripts": ["background/background.js"]
   },
